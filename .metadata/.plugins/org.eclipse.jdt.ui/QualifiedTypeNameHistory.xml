@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="java.lang.IncompatibleClassChangeError"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="toto.Exo"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="org.omg.CORBA.PUBLIC_MEMBER"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="javax.swing.text.html.HTML.Tag"/>
@@ -15,4 +14,8 @@
 <fullyQualifiedTypeName name="toto.ArrayUtils"/>
 <fullyQualifiedTypeName name="toto.Sapin"/>
 <fullyQualifiedTypeName name="javax.swing.table.TableColumn"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletException"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
