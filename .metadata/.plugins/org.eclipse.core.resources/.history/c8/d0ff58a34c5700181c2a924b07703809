@@ -1,0 +1,14 @@
+package com.beans;
+
+public class Client
+{
+	private String nom;
+	private String prenom;
+	private String adresse;
+	private String tel;
+	private String email;
+	
+	/************************
+	 * 		GETTER/SETTER	*
+	 ************************/
+}

@@ -18,4 +18,7 @@
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="jdk.nashorn.internal.ir.RuntimeNode.Request"/>
+<fullyQualifiedTypeName name="org.apache.jasper.tagplugins.jstl.core.If"/>
+<fullyQualifiedTypeName name="com.beans.Client"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,8 @@
+1526282297447	Rename resource 'CréationClient.jsp'
+1526282315494	Rename resource 'CréationCommande.jsp'
+1526282924732	Move 'formulaireClient.jsp' to 'lib'
+1526282930407	Move 'formulaireClient.jsp' to 'WEB-INF'
+1526282932744	Move 'formulaireCommande.jsp' to 'WEB-INF'
+1526282935923	Move 'style.css' to 'WEB-INF'
+1526285507207	Delete element
+1526287599392	Move 'style.css' to 'inc'

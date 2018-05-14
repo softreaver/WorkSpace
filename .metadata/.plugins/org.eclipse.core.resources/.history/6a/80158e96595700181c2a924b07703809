@@ -1,0 +1,63 @@
+package com.servlets;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.beans.Client;
+
+public class CreationClient extends HttpServlet
+{
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
+	{
+		// Création d'une instance du bean Client
+		Client client = new Client();
+
+		// récupérer toutes les valeurs passées par l'url
+		client.setNom(req.getParameter("nomClient"));
+		client.setPrenom(req.getParameter("prenomClient"));
+		client.setAdresse(req.getParameter("adresseClient"));
+		client.setTel(req.getParameter("telephoneClient"));
+		client.setEmail(req.getParameter("emailClient"));
+
+		// Vérifier que tous les champs ont été corectement remplis
+		boolean error = false;
+		if (req.getParameter("nomClient").isEmpty())
+		{
+			req.setAttribute("nomClient", "isEmpty");
+			error = true;
+		}
+		if (req.getParameter("prenomClient").isEmpty())
+		{
+			req.setAttribute("prenomClient", "isEmpty");
+			error = true;
+		}
+		if (req.getParameter("adresseClient").isEmpty())
+		{
+			req.setAttribute("adresseClient", "isEmpty");
+			error = true;
+		}
+		if (req.getParameter("telephoneClient").isEmpty())
+		{
+			req.setAttribute("telephoneClient", "isEmpty");
+			error = true;
+		}
+		if (req.getParameter("emailClient").isEmpty())
+		{
+			req.setAttribute("emailClient", "isEmpty");
+			error = true;
+		}
+		
+		if(error){
+			
+		}
+		else
+		{
+			
+		}
+	}
+}

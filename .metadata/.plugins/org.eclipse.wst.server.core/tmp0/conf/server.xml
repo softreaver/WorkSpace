@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="C:\Users\ChristopherMILAZZO\Desktop\JAVA\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\ChristopherMILAZZO\Desktop\JAVA\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\testWebProject" path="/testWebProject" reloadable="true" source="org.eclipse.jst.jee.server:testWebProject"/></Host>
+      <Context docBase="C:\Users\ChristopherMILAZZO\Desktop\JAVA\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\ChristopherMILAZZO\Desktop\JAVA\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\testWebProject" path="/testWebProject" reloadable="true" source="org.eclipse.jst.jee.server:testWebProject"/><Context docBase="C:\Users\ChristopherMILAZZO\Desktop\JAVA\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\filRouge" path="/filRouge" reloadable="true" source="org.eclipse.jst.jee.server:filRouge"/><Context docBase="C:\Users\ChristopherMILAZZO\Desktop\JAVA\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\jstl" path="/jstl" reloadable="true" source="org.eclipse.jst.jee.server:jstl"/></Host>
     </Engine>
   </Service>
 </Server>
