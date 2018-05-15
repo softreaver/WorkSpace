@@ -9,9 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 
 public class CreerClient extends HttpServlet
 {
+	private final String VUE = "/WEB-INF/formulaireClient.jsp";
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
 	{
-		getServletContext().getRequestDispatcher("/WEB-INF/formulaireClient.jsp").forward(req, resp);
+		getServletContext().getRequestDispatcher(VUE).forward(req, resp);
 	}
 }

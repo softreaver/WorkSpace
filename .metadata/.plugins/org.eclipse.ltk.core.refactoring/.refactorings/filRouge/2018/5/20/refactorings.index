@@ -6,3 +6,9 @@
 1526282935923	Move 'style.css' to 'WEB-INF'
 1526285507207	Delete element
 1526287599392	Move 'style.css' to 'inc'
+1526389356755	Move 'creationClient.jsp' to 'WebContent'
+1526389361149	Move 'creationCommande.jsp' to 'lib'
+1526389365014	Move 'creationCommande.jsp' to 'WEB-INF'
+1526390700279	Move 'creationClient.jsp' to 'WEB-INF'
+1526392111678	Move files
+1526392509266	Copy file

@@ -9,9 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 
 public class CreerCommande extends HttpServlet
 {
+	private final String VUE = "/WEB-INF/formulaireCommande.jsp";
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
 	{
-		getServletContext().getRequestDispatcher("/WEB-INF/formulaireCommande.jsp").forward(req, resp);
+		getServletContext().getRequestDispatcher(VUE).forward(req, resp);
 	}
 }

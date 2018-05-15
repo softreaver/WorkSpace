@@ -5,13 +5,44 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Récapitulation des données</title>
 </head>
 <body>
-	<c:forEach items="${ paramValues }" var="item">
-		<p>
-			<c:out value="${ item.key } : ${ item.value }"/>
-		</p>
-	</c:forEach>
+	<ul>
+		<c:forEach items="${ paramValues }" var="item">
+			<li>
+				<c:out value="${ item.key }" />
+				<ul>
+					<c:forEach items="${ item.value }" var="val">
+						<c:forTokens var="elem" items="${ val }" delims=" ,">
+							<li>
+								<c:out value="${ elem }"/>
+							</li>
+						</c:forTokens>
+					</c:forEach>
+				</ul>
+			</li>
+		</c:forEach>
+	</ul>
+	
+	<h2>Voici ce que je sais de vous :</h2>
+	<p>
+		<c:out value="Vous êtes : ${ param.nom } ${ param.prenom }"/>
+	</p>
+	
+	<h2>Vous avez visité :</h2>
+	<p>
+		<c:choose>
+			<c:when test="${ !empty paramValues.pays }">
+				<c:forEach items="${ paramValues.pays }" var="pays">
+					<c:out value="${ pays }"/>
+					<br/>
+				</c:forEach>
+			</c:when>
+			<c:otherwise>
+				Vous n'avez pas visité de pays parmis la liste proposée.
+			</c:otherwise>
+		</c:choose>
+	</p>
 </body>
 </html>
