@@ -4,9 +4,17 @@
   	<servlet-name>inscription</servlet-name>
   	<servlet-class>com.sdzee.servlets.Inscription</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>form</servlet-name>
+  	<servlet-class>com.sdzee.servlets.Form</servlet-class>
+  </servlet>
   
   <servlet-mapping>
   	<servlet-name>inscription</servlet-name>
   	<url-pattern>/inscription</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>form</servlet-name>
+  	<url-pattern>/form</url-pattern>
   </servlet-mapping>
 </web-app>

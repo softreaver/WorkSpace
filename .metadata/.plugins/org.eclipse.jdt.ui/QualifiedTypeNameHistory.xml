@@ -21,4 +21,5 @@
 <fullyQualifiedTypeName name="jdk.nashorn.internal.ir.RuntimeNode.Request"/>
 <fullyQualifiedTypeName name="org.apache.jasper.tagplugins.jstl.core.If"/>
 <fullyQualifiedTypeName name="com.beans.Client"/>
+<fullyQualifiedTypeName name="java.lang.VirtualMachineError"/>
 </qualifiedTypeNameHistroy>
