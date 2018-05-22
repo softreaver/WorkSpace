@@ -7,9 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@SuppressWarnings("serial")
 public class CreerCommande extends HttpServlet
 {
-	private final String VUE = "/WEB-INF/formulaireCommande.jsp";
+	private final String VUE = "/WEB-INF/afficherCommande.jsp";
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
