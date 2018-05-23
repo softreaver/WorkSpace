@@ -27,6 +27,10 @@
                 <br />
                 
                 <p class="${empty form.erreurs ? 'succes' : 'erreur'}">${form.resultat}</p>
+                
+                <c:if test="${ !empty sessionScope.sessionUtilisateur }">
+                	<p class="succes">Vous êtes connecté avec le mail : ${ sessionScope.sessionUtilisateur.email }</p>
+                </c:if>
             </fieldset>
         </form>
     </body>
