@@ -5,15 +5,6 @@ xmlns="http://java.sun.com/xml/ns/javaee"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
 id="WebApp_ID" 
 version="3.0">
-  <servlet>
-  	<servlet-name>nouveauClient</servlet-name>
-  	<servlet-class>com.servlets.CreerClient</servlet-class>
-  </servlet>
-  
-  <servlet>
-  	<servlet-name>nouvelleCommande</servlet-name>
-  	<servlet-class>com.servlets.CreerCommande</servlet-class>
-  </servlet>
   
   <servlet>
   	<servlet-name>creationClient</servlet-name>
@@ -25,15 +16,16 @@ version="3.0">
   	<servlet-class>com.servlets.CreationCommande</servlet-class>
   </servlet>
   
-  <servlet-mapping>
-  	<servlet-name>nouveauClient</servlet-name>
-  	<url-pattern>/client</url-pattern>
-  </servlet-mapping>
+  <servlet>
+  	<servlet-name>afficherClients</servlet-name>
+  	<servlet-class>com.servlets.AfficherClients</servlet-class>
+  </servlet>
   
-  <servlet-mapping>
-  	<servlet-name>nouvelleCommande</servlet-name>
-  	<url-pattern>/commande</url-pattern>
-  </servlet-mapping>
+  <servlet>
+  	<servlet-name>afficherCommandes</servlet-name>
+  	<servlet-class>com.servlets.AfficherCommandes</servlet-class>
+  </servlet>
+  
   
   <servlet-mapping>
   	<servlet-name>creationClient</servlet-name>
@@ -43,6 +35,16 @@ version="3.0">
   <servlet-mapping>
   	<servlet-name>creationCommande</servlet-name>
   	<url-pattern>/creationCommande</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>afficherClients</servlet-name>
+  	<url-pattern>/afficherClients</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>afficherCommandes</servlet-name>
+  	<url-pattern>/afficherCommandes</url-pattern>
   </servlet-mapping>
   
   <jsp-config>

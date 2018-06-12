@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 @SuppressWarnings("serial")
 public class Deconnexion extends HttpServlet
 {
-	public static final String URL_REDIRECTION = "http://www.siteduzero.com";
+	public static final String URL_REDIRECTION = "connexion";
 
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException

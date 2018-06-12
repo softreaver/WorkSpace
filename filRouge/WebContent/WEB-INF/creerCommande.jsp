@@ -16,9 +16,14 @@
                  à la fois depuis le formulaire de création d'un client 
                  et depuis celui de création d'une commande. --%>
                 <c:set var="client" value="${ commande.client }" scope="request" />
-                <fieldset>
-                    <legend>Informations client</legend>
-                    <c:import url="/inc/inc_client_form.jsp" />
+                <fieldset>                    
+                    <div id="infosClient">
+                    	<c:import url="/inc/inc_client_form.jsp" />
+                    </div>
+                    
+                    <div id="test">
+                    
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Informations commande</legend>
@@ -58,5 +63,7 @@
                 <input type="reset" value="Remettre à zéro" /> <br />
             </form>
         </div>
+        
+        <script type="text/javascript" src="<c:url value="/inc/formulaireCommande.js"/>"></script>
     </body>
 </html>

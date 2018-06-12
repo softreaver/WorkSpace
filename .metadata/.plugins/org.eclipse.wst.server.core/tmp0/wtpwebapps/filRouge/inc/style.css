@@ -49,3 +49,7 @@ form input.sansLabel {
     font-style: italic;
     color: #E8A22B;
 }
+
+.pair {
+	background-color: grey;
+}

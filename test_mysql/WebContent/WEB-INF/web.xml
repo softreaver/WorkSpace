@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+    <display-name>test_mysql</display-name>
+    	
+  	<servlet>
+		<servlet-name>Inscription</servlet-name>
+		<servlet-class>com.jdbc.servlets.Inscription</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>Accueil</servlet-name>
+		<servlet-class>com.jdbc.servlets.Accueil</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>Afficher</servlet-name>
+		<servlet-class>com.jdbc.servlets.Afficher</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Inscription</servlet-name>
+		<url-pattern>/inscription</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Accueil</servlet-name>
+		<url-pattern>/accueil</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Afficher</servlet-name>
+		<url-pattern>/afficher</url-pattern>
+	</servlet-mapping>
+	
+	<listener>
+		<listener-class>com.jdbc.config.InitialisationDaoFactory</listener-class>
+	</listener>
+	
+</web-app>

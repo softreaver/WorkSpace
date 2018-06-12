@@ -104,4 +104,5 @@ public final class ConnexionForm
 		else
 			return valeur;
 	}
+
 }

@@ -1,0 +1,6 @@
+package com.test_dao.beans;
+
+public class Utilisateur
+{
+
+}
